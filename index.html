@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styling.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/themes/light.css"
+    />
+    <title>LEVI Turntable Product Page - A Levitating Turntable</title>
+  </head>
+
+  <body>
+
+    <!-- loading screen SVG animation -->
+    <div id="loading-screen">
+      <svg
+        id="logo"
+        width="344"
+        height="187"
+        viewBox="0 0 342 171"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M20.96 6.2H21.96V5.2H20.96V6.2ZM20.96 169V170H21.96V169H20.96ZM0.940002 169H-0.0599985V170H0.940002V169ZM0.940002 6.2V5.2H-0.0599985V6.2H0.940002ZM19.96 6.2V169H21.96V6.2H19.96ZM20.96 168H0.940002V170H20.96V168ZM1.94 169V6.2H-0.0599985V169H1.94ZM0.940002 7.2H20.96V5.2H0.940002V7.2Z"
+          stroke="white"
+          stroke-width="1"
+        />
+        <path
+          d="M165.28 116.2V117.2H166.182L166.275 116.303L165.28 116.2ZM68.92 116.2V115.2H67.8564L67.9219 116.262L68.92 116.2ZM81.02 144.14L80.3429 144.876L80.3506 144.883L80.3584 144.89L81.02 144.14ZM129.64 148.1L130.209 148.922L130.213 148.919L129.64 148.1ZM141.96 131.82V130.82H141.249L141.016 131.491L141.96 131.82ZM163.52 131.82L164.483 132.088L164.837 130.82H163.52V131.82ZM144.16 160.2L144.756 161.003L144.764 160.997L144.16 160.2ZM77.28 163.28L76.7823 164.147L76.7884 164.151L77.28 163.28ZM56.16 141.5L55.2795 141.974L55.2826 141.98L56.16 141.5ZM55.94 75.72L56.8231 76.1891L56.8231 76.1891L55.94 75.72ZM76.84 54.16L77.3269 55.0335L77.3316 55.0308L76.84 54.16ZM138.44 53.94L137.947 54.81L137.947 54.81L138.44 53.94ZM158.68 74.62L157.798 75.0906L157.802 75.0994L157.807 75.1081L158.68 74.62ZM145.26 99.92V100.92H146.26V99.92H145.26ZM140.2 80.34L139.344 80.8578L139.351 80.8679L140.2 80.34ZM126.34 67.8L125.884 68.6898L125.897 68.6968L125.911 68.7033L126.34 67.8ZM81.24 73.08L80.5718 72.3359L80.5643 72.3428L81.24 73.08ZM69.14 99.92L68.144 99.8306L68.0462 100.92H69.14V99.92ZM164.94 104.1C164.94 107.875 164.722 111.874 164.285 116.097L166.275 116.303C166.718 112.019 166.94 107.952 166.94 104.1H164.94ZM165.28 115.2H68.92V117.2H165.28V115.2ZM67.9219 116.262C68.6679 128.346 72.7835 137.921 80.3429 144.876L81.6971 143.404C74.5898 136.865 70.6388 127.814 69.9181 116.138L67.9219 116.262ZM80.3584 144.89C88.0324 151.661 97.2919 155.04 108.08 155.04V153.04C97.7481 153.04 88.9676 149.819 81.6816 143.39L80.3584 144.89ZM108.08 155.04C116.887 155.04 124.285 153.023 130.209 148.922L129.071 147.278C123.555 151.097 116.58 153.04 108.08 153.04V155.04ZM130.213 148.919C136.252 144.692 140.489 139.094 142.905 132.149L141.016 131.491C138.738 138.039 134.762 143.294 129.067 147.281L130.213 148.919ZM141.96 132.82H163.52V130.82H141.96V132.82ZM162.557 131.552C159.389 142.925 153.064 152.2 143.556 159.403L144.764 160.997C154.617 153.533 161.197 143.888 164.483 132.088L162.557 131.552ZM143.564 159.397C134.088 166.433 122.281 169.98 108.08 169.98V171.98C122.626 171.98 134.872 168.341 144.756 161.003L143.564 159.397ZM108.08 169.98C96.7954 169.98 86.7009 167.45 77.7716 162.409L76.7884 164.151C86.0458 169.377 96.4846 171.98 108.08 171.98V169.98ZM77.7777 162.413C68.997 157.375 62.0857 150.251 57.0374 141.02L55.2826 141.98C60.5009 151.522 67.6697 158.919 76.7823 164.147L77.7777 162.413ZM57.0405 141.026C51.9968 131.659 49.46 120.826 49.46 108.5H47.46C47.46 121.107 50.0566 132.274 55.2795 141.974L57.0405 141.026ZM49.46 108.5C49.46 96.1686 51.9255 85.4083 56.8231 76.1891L55.0569 75.2508C49.9812 84.8051 47.46 95.8981 47.46 108.5H49.46ZM56.8231 76.1891C61.723 66.9658 68.555 59.9227 77.3269 55.0335L76.3531 53.2865C67.2316 58.3706 60.1303 65.7008 55.0569 75.2508L56.8231 76.1891ZM77.3316 55.0308C86.2571 49.9922 96.4972 47.46 108.08 47.46V45.46C96.1961 45.46 85.6096 48.0611 76.3484 53.2892L77.3316 55.0308ZM108.08 47.46C119.37 47.46 129.316 49.9192 137.947 54.81L138.933 53.07C129.964 47.9874 119.67 45.46 108.08 45.46V47.46ZM137.947 54.81C146.584 59.7046 153.195 66.4605 157.798 75.0906L159.562 74.1494C154.778 65.1795 147.896 58.1488 138.933 53.07L137.947 54.81ZM157.807 75.1081C162.555 83.5965 164.94 93.2518 164.94 104.1H166.94C166.94 92.9482 164.485 82.9502 159.553 74.1318L157.807 75.1081ZM146.26 99.92C146.26 92.1432 144.539 85.4255 141.049 79.8121L139.351 80.8679C142.608 86.1078 144.26 92.4435 144.26 99.92H146.26ZM141.056 79.8222C137.581 74.0819 132.813 69.7676 126.769 66.8967L125.911 68.7033C131.6 71.4057 136.072 75.4514 139.345 80.8578L141.056 79.8222ZM126.796 66.9102C120.922 63.8977 114.383 62.4 107.2 62.4V64.4C114.097 64.4 120.318 65.8356 125.884 68.6898L126.796 66.9102ZM107.2 62.4C96.8462 62.4 87.9514 65.7094 80.5719 72.3359L81.9081 73.824C88.9019 67.5439 97.3138 64.4 107.2 64.4V62.4ZM80.5643 72.3428C73.3047 78.9975 69.1882 88.1954 68.144 99.8306L70.136 100.009C71.1451 88.7646 75.0953 80.0692 81.9157 73.8171L80.5643 72.3428ZM69.14 100.92H145.26V98.92H69.14V100.92Z"
+          stroke="white"
+          stroke-width="1"
+        />
+        <path
+          d="M238.82 149.52L237.882 149.866L238.823 152.419L239.759 149.864L238.82 149.52ZM276.22 47.44V46.44H275.521L275.281 47.096L276.22 47.44ZM297.56 47.44L298.491 47.8052L299.027 46.44H297.56V47.44ZM250.26 168V169H250.942L251.191 168.365L250.26 168ZM226.94 168L226.009 168.365L226.258 169H226.94V168ZM179.64 47.44V46.44H178.173L178.709 47.8052L179.64 47.44ZM201.2 47.44L202.138 47.0942L201.897 46.44H201.2V47.44ZM239.759 149.864L277.159 47.784L275.281 47.096L237.881 149.176L239.759 149.864ZM276.22 48.44H297.56V46.44H276.22V48.44ZM296.629 47.0748L249.329 167.635L251.191 168.365L298.491 47.8052L296.629 47.0748ZM250.26 167H226.94V169H250.26V167ZM227.871 167.635L180.571 47.0748L178.709 47.8052L226.009 168.365L227.871 167.635ZM179.64 48.44H201.2V46.44H179.64V48.44ZM200.262 47.7858L237.882 149.866L239.758 149.174L202.138 47.0942L200.262 47.7858Z"
+          stroke="white"
+          stroke-width="1"
+        />
+        <path
+          d="M318.6 23.9L319.307 23.1929L319.307 23.1929L318.6 23.9ZM318.6 4.53999L319.307 5.2471L319.307 5.2471L318.6 4.53999ZM337.52 4.53999L336.793 5.22662L336.803 5.237L336.813 5.2471L337.52 4.53999ZM337.52 23.9L336.813 23.1929L336.803 23.203L336.793 23.2134L337.52 23.9ZM337.96 47.44H338.96V46.44H337.96V47.44ZM337.96 168V169H338.96V168H337.96ZM317.94 168H316.94V169H317.94V168ZM317.94 47.44V46.44H316.94V47.44H317.94ZM328.28 26.86C324.726 26.86 321.755 25.6409 319.307 23.1929L317.893 24.6071C320.725 27.4391 324.208 28.86 328.28 28.86V26.86ZM319.307 23.1929C316.859 20.7449 315.64 17.7745 315.64 14.22H313.64C313.64 18.2922 315.061 21.7751 317.893 24.6071L319.307 23.1929ZM315.64 14.22C315.64 10.6655 316.859 7.69512 319.307 5.2471L317.893 3.83289C315.061 6.66487 313.64 10.1478 313.64 14.22H315.64ZM319.307 5.2471C321.755 2.79908 324.726 1.57999 328.28 1.57999V-0.420008C324.208 -0.420008 320.725 1.0009 317.893 3.83289L319.307 5.2471ZM328.28 1.57999C331.675 1.57999 334.491 2.78884 336.793 5.22662L338.247 3.85337C335.563 1.01115 332.219 -0.420008 328.28 -0.420008V1.57999ZM336.813 5.2471C339.261 7.69512 340.48 10.6655 340.48 14.22H342.48C342.48 10.1478 341.059 6.66487 338.227 3.83289L336.813 5.2471ZM340.48 14.22C340.48 17.7745 339.261 20.7449 336.813 23.1929L338.227 24.6071C341.059 21.7751 342.48 18.2922 342.48 14.22H340.48ZM336.793 23.2134C334.491 25.6511 331.675 26.86 328.28 26.86V28.86C332.219 28.86 335.563 27.4288 338.247 24.5866L336.793 23.2134ZM336.96 47.44V168H338.96V47.44H336.96ZM337.96 167H317.94V169H337.96V167ZM318.94 168V47.44H316.94V168H318.94ZM317.94 48.44H337.96V46.44H317.94V48.44Z"
+          stroke="white"
+          stroke-width="1"
+        />
+      </svg>
+      <sl-icon-button name="volume-up" id="sound-btn"></sl-icon-button>
+    </div>
+ 
+    <!-- NAVIGATION BAR -->
+    <nav id="navbar">
+      <div id="navlogo">
+        <a href="#section-1">
+          <img
+            id="toplogo"
+            src="images/hk-logo.png"
+            alt="Harman Kardon Logo black"
+            height="16px"
+        /></a>
+      </div>
+      <div id="navlinks">
+        <a href="#foot">Contact</a>
+        <a href="#section-4">Specs</a>
+        <a href="#section-1">Home</a>
+      </div>
+    </nav>
+    <!-- REFERENCE: hide and show nav bar from w3schools - https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp -->
+
+    <!-- /////////////////// START SECTION 1 (VIDEO) //////////////////// -->
+
+    <div id="section-1">
+      <video
+        class="video"
+        playsinline="true"
+        webkit-playsinline="true"
+        preload="auto"
+        muted="muted"
+      >
+        <source src="./animations/trim11.mp4" type="video/mp4" />
+      </video>
+      <!-- bouncing down arrow section 1 -->
+      <div class="arrow"><sl-icon name="arrow-down"></sl-icon></div>
+    </div>
+    <!-- /////////////////// START SECTION 2 (MEET LEVI) //////////////////// -->
+    
+    <div id="section-2">
+      <div id="floaters">
+        <div class="disc">
+          <img
+            src="images/disc.png"
+            alt="clear vinyl disc cropped in half image"
+          />
+        </div>
+        <div class="oval">
+          <img src="images/oval.png" alt="LEVI turntable closeup image" />
+        </div>
+        <div class="player">
+          <img
+            src="images/floating-levi.png"
+            alt="LEVI turntable closeup image"
+          />
+        </div>
+      </div>
+      <div id="container">
+        <h1>Meet levi</h1>
+        <p>
+          The newest addition to the smart world is the Harman Kardon LEVI—a
+          levitating turntable that looks like it’s powered by magic. But not
+          only is it incredible to watch in action, but it enhances your
+          listening experience.
+        </p>
+      </div>
+    </div>
+    <!-- /////////////////// START SECTION 3 (IMAGE GALLERY) //////////////////// -->
+
+
+    <div id="section-3">
+
+      <div id="s3title">
+<h2>Gallery</h2>
+<p>harman/kardon levi v1</p>
+      </div>
+      <div id="gallery">
+            <div class="chev-l"><sl-icon name="chevron-left"></sl-icon></div>
+            <div class="chev-r"><sl-icon name="chevron-right"></sl-icon></div>
+        <!-- images exist purely in javasctript, hence this div is empty -->
+      </div>
+    </div>
+
+    <!-- SHOELACE COMPONENT: DIVIDER -->
+     <div class="divider"><sl-divider></sl-divider></div>
+    <!-- /////////////////// START SECTION 4 (SPECIFICATIONS) //////////////////// -->
+    
+    <div id="section-4">
+      <div id="s4title">
+        <h3>
+          Specifications
+        </h3>
+        <p>harman/kardon levi v1</p>
+      </div>
+      <!-- Main text area (specifications) -->
+      <!-- spec 1 -->
+      <div class="spec">
+      <div class="left">
+          <p>Type</p>
+      </div>
+        <div class="right">
+          <p>Direct Drive</p>
+        </div>
+      </div>
+      <!-- spec 2 -->
+      <div class="spec">
+        <div class="left">
+            <p>Speeds</p>
+        </div>
+          <div class="right">
+            <p>33.2, 46rpm</p>
+          </div>
+        </div>
+        <!-- spec 3 -->
+      <div class="spec">
+        <div class="left">
+            <p>Turntable Platter</p>
+        </div>
+          <div class="right">
+            <p>POM</p>
+          </div>
+        </div>
+               <!-- spec 4 -->
+      <div class="spec">
+        <div class="left">
+            <p>Power Consumption</p>
+        </div>
+          <div class="right">
+            <p>5.4W</p>
+          </div>
+        </div>
+               <!-- spec 5 -->
+      <div class="spec">
+        <div class="left">
+            <p>Audio Out</p>
+        </div>
+          <div class="right">
+            <p>RCA Phono/Line Level</p>
+          </div>
+        </div>
+               <!-- spec 6 -->
+      <div class="spec">
+        <div class="left">
+            <p>BlueTooth</p>
+        </div>
+          <div class="right">
+            <p>SBC/aptX/aptX HD</p>
+          </div>
+        </div>
+               <!-- spec 7 -->
+      <div class="spec">
+        <div class="left">
+            <p>Bearing</p>
+        </div>
+          <div class="right">
+            <p>Polished Steel</p>
+          </div>
+        </div>
+                       <!-- spec 8 -->
+      <div class="spec">
+        <div class="left">
+            <p>Weight</p>
+        </div>
+          <div class="right">
+            <p>7.5kg Approx.</p>
+          </div>
+        </div>
+                               <!-- spec 9 -->
+      <div class="spec">
+        <div class="left">
+            <p>Dimensions</p>
+        </div>
+          <div class="right">
+            <p>W/D/H: 420 x 350 x 125</p>
+          </div>
+      </div>
+
+    </div>
+    <!-- /////////////////// FOOTER //////////////////// -->
+<footer id="foot">
+  <!-- Harman Kardon Logo -->
+
+
+  <div class="container2">
+    <div class="row">
+      <div class="footer-col">
+        <h4>company</h4>
+        <ul>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">our services</a></li>
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">affiliate program</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">shipping</a></li>
+          <li><a href="#">returns</a></li>
+          <li><a href="#">order status</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+          <!-- SHOELACE AVATAR GROUP (3rd component) -->
+          <div class="avatar-group">
+            <a href="#">
+              <sl-avatar
+              image="https://images.unsplash.com/photo-1490150028299-bf57d78394e0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&q=80&crop=right"
+              label="Avatar 1 of 4"
+            ></sl-avatar>
+
+            <sl-avatar
+              image="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&crop=left&q=80"
+              label="Avatar 2 of 4"
+            ></sl-avatar>
+
+            <sl-avatar
+              image="https://images.unsplash.com/photo-1456439663599-95b042d50252?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&crop=left&q=80"
+              label="Avatar 3 of 4"
+            ></sl-avatar>
+
+            <sl-avatar
+              image="https://images.unsplash.com/flagged/photo-1554078875-e37cb8b0e27d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&crop=top&q=80"
+              label="Avatar 4 of 4"
+            ></sl-avatar>
+          </a>
+          <!-- Reference: avatar group - https://shoelace.style/components/avatar -->
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Reference responsive footer: https://www.youtube.com/watch?v=YOb67OKw62s. https://drive.google.com/file/d/12DNl4xsajW8Crzf5YqMwDksH_1y0jwhk/view -->
+
+    <!-- links scripts to html -->
+    <script src="https://kit.fontawesome.com/84e247914f.js" crossorigin="anonymous"></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/shoelace.js"
+    ></script>
+    <script src="./scripts/ScrollTrigger.min.js"></script>
+    <script src="./scripts/gsap.min.js"></script>
+    <script src="./scripts/SwiperBox.js"></script>
+    <script src="./scripts/mainjavascript.js"></script>
+    <!-- REFERENCES:
+    SCROLL TRIGGER - GSAP: https://greensock.com/scrolltrigger/
+    IMAGE GALLERY: https://www.cssscript.com/gallery-swiper-box/ -->
+  </body>
+</html>

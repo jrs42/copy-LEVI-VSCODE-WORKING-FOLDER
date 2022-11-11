@@ -1,0 +1,591 @@
+/* BASIC UNIVERSAL STYLING */
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #e6e7e9;
+}
+
+/* loading screen with svg animation */
+/* reference for svg animation: https://www.youtube.com/watch?v=vJNVramny9k&t=581s&ab_channel=developedbyed */
+/* sound player */
+#sound-btn {
+  font-size: 40px;
+  margin-top: 56%;
+}
+/* loading screen sizing and colour */
+
+#loading-screen {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 100;
+  background: #ffad3a;
+  animation-delay: 5s;
+  animation-duration: 0.8s;
+  animation-name: loadin;
+  animation-fill-mode: forwards;
+  align-items: center;
+  text-align: center;
+}
+
+@keyframes loadin {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100vh;
+  }
+}
+/* LEVI svg properties */
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fill 0.5s ease forwards 3.5s;
+}
+/* paths for each letter */
+/* L */
+#logo path:nth-child(1) {
+  stroke-dasharray: 355;
+  stroke-dashoffset: 355;
+  animation: line-anim 3s ease forwards;
+}
+/* E */
+#logo path:nth-child(2) {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: line-anim 3.2s ease forwards 0.4s;
+}
+/* V */
+#logo path:nth-child(3) {
+  stroke-dasharray: 290;
+  stroke-dashoffset: 290;
+  animation: line-anim 3.4s ease forwards 0.8s;
+}
+/* I */
+#logo path:nth-child(4) {
+  stroke-dasharray: 255;
+  stroke-dashoffset: 255;
+  animation: line-anim 3.8s ease forwards 1.2s;
+}
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+
+/* --------- navigation general styling --------- */
+
+#navbar {
+  background-color: #ffad3a;
+  position: fixed;
+  width: 100vw;
+  display: block;
+  transition: top 0.3s;
+  z-index: 99;
+}
+
+/* Style the navbar links */
+#navbar a {
+  float: right;
+  display: flex;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  align-content: center;
+  padding: 26px 0px 26px 0px;
+  margin-right: 65px;
+  text-decoration: none;
+  position: relative;
+}
+
+/* nav logo styling */
+
+#navlogo {
+  position: absolute;
+  margin-left: 50vw;
+  transform: translate(-30%);
+}
+
+/* --------- nav CSS ANIMATION (white line)--------- */
+
+#navlinks a:after {
+  content: "";
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  height: 2.2px;
+  width: 0;
+  left: 0;
+  bottom: 23px;
+  transition: 0.3s;
+}
+#navlinks a:hover:after {
+  width: 100%;
+}
+
+#navlinks a:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+/* 'Navbar' REFERENCE: hide and show nav bar from w3schools - https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp */
+
+/* ////////////////////// SECTION 1 START ////////////////////// */
+/* video styling */
+
+#section-1 {
+  margin-top: 70px;
+  /* margin-top accounts for the position: fixed navigation bar, preventing content from getting hidden under the navigation */
+}
+
+/* scroll trigger videos styling */
+.video,
+.video2 {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* ------- bouncing arrow (section 1) ------- */
+
+.arrow {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -20px;
+  animation: bounce 2.5s infinite;
+  font-size: 25px;
+  /* font-size changes the size of icons imported from shoelace (https://shoelace.style/components/icon)*/
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  85%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+/* ////////////////////// SECTION 2 START ////////////////////// */
+
+/* section vertical height */
+#section-2 {
+  height: 230vh;
+  margin: 0;
+}
+
+/* text area */
+#container {
+  margin-top: 200px;
+  margin-left: 17%;
+  width: 590px;
+  position: absolute;
+}
+#container p {
+  margin-top: 20px;
+  font-size: 26px;
+}
+/* meet levi text hover animation */
+h1 {
+  font-size: 65px;
+  position: relative;
+  transition: 0.2s;
+}
+h1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #547d9d;
+  z-index: -1;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: bottom right;
+}
+h1:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+h1:hover {
+  color: #ffffff;
+  transition: 0.2s;
+}
+
+/*moving images into original positions */
+
+.disc {
+  margin-top: 350px;
+  width: auto;
+  position: absolute;
+}
+.player {
+  margin-top: 850px;
+  width: auto;
+  right: 0;
+  position: absolute;
+}
+
+.oval {
+  width: auto;
+  margin-top: 982px;
+  right: 0;
+  margin-right: 500px;
+  position: absolute;
+}
+/* ////////////////////// SECTION 3 (Gallery) START ////////////////////// */
+
+#section-3 {
+  background-color: #ffffff;
+}
+/* Section Title area */
+#s3title {
+  margin-left: 100px;
+  padding-top: 150px;
+}
+
+/* heading with hover animation */
+
+h2 {
+  font-size: 55px;
+  font-style: medium;
+  position: relative;
+  transition: 0.2s;
+}
+
+h2:hover {
+  color: #547d9d;
+  transition: 0.3s;
+}
+
+#s3title p {
+  font-size: 16px;
+  margin-top: 10px;
+  font-style: light;
+}
+/* --------- GALLERY div ---------- */
+#gallery {
+  margin-top: 60px;
+  margin-left: 100px;
+  height: 100vh;
+}
+/* gallery arrows left and right */
+.chev-l {
+  position: absolute;
+  margin-top: 27%;
+  margin-left: 20px;
+  z-index: 50;
+}
+.chev-r {
+  position: absolute;
+  right: 0;
+  margin-top: 27%;
+  margin-right: 11%;
+  z-index: 50;
+}
+/* ////////////////////// SECTION 4 START (Specifications) ////////////////////// */
+
+#section-4 {
+  height: 140vh;
+  background-color: #ffffff;
+}
+/* Section Title area */
+#s4title {
+  margin-left: 100px;
+  padding-top: 100px;
+}
+h3 {
+  font-size: 55px;
+  font-style: medium;
+}
+#s4title p {
+  font-size: 16px;
+  font-style: light;
+}
+/* each line of text has the class spec to apply spacing and to display the divs as flex to make them appear inline */
+.spec {
+  margin-top: 65px;
+  display: flex;
+  font-size: 22px;
+  transition: 1s;
+}
+.left {
+  margin-left: 100px;
+}
+.right {
+  position: absolute;
+  margin-left: 55%;
+}
+/* hover animating each line */
+
+.spec:hover {
+  font-size: 210%;
+}
+
+/* ////////////////////// FOOTER ////////////////////// */
+#foot {
+  background-color: #ffad3a;
+  color: white;
+  padding: 50px;
+  line-height: 1.5;
+}
+
+/* H/K Logo div */
+#footertitle {
+  padding-top: 70px;
+  padding-left: 100px;
+}
+
+/* links */
+
+.container2 {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 22px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #0b3849;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a:hover {
+  color: #3e5ca7;
+  background-color: #ffffff;
+}
+
+.avatar-group sl-avatar:not(:first-of-type) {
+  margin-left: -0.8rem;
+}
+
+.avatar-group sl-avatar::part(base) {
+  border: solid 2px var(--sl-color-neutral-0);
+}
+
+/* ----------- MEDIA QUEIRIES ----------- */
+
+/* ----------- 767px, 574px ----------- */
+@media (max-width: 767px) {
+  /* loading screen */
+  #loading-screen {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: 100;
+    animation-name: loadin;
+    animation-fill-mode: forwards;
+    align-items: center;
+    text-align: center;
+  }
+  #sound-btn {
+    font-size: 50px;
+    margin-top: 70%;
+    position: absolute;
+  }
+  #navlogo {
+    display: none;
+  }
+  #logo {
+    top: 40%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+  }
+  /* Nav */
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  /* arrow move up */
+  .arrow {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    margin-left: -20px;
+    animation: bounce 2.5s infinite;
+    font-size: 30px;
+  }
+  /* Section 2 */
+  #section-2 {
+    height: 220vh;
+  }
+
+  h1 {
+    font-size: 37px;
+    position: relative;
+    transition: 0.2s;
+    margin-top: 100px;
+  }
+  /* text area */
+
+  #container p {
+    margin-top: 20px;
+    font-size: 22px;
+    width: 250px;
+  }
+  /* three images */
+  .disc img {
+    width: 100px;
+  }
+  .player img {
+    width: 220px;
+  }
+  .oval img {
+    width: 100px;
+  }
+  .oval {
+    margin-top: 870px;
+    right: 0;
+    margin-right: 118px;
+    position: absolute;
+  }
+  /* section 3 (gallery) */
+  #section-3 {
+    height: 80vh;
+  }
+  /* s3 title area */
+  h2 {
+    font-size: 30px;
+  }
+  #section-3 p {
+    font-size: 16px;
+  }
+  #s3title {
+    margin-left: 30px;
+  }
+  /* section 4 start */
+  #section-4 {
+    height: 80vh;
+    background-color: #ffffff;
+  }
+  /* gallery divs */
+  #gallery {
+    margin: 20px 0px 00px 20px;
+    width: 355px;
+  }
+  .chev-l {
+    margin-top: 27%;
+    margin-left: 20px;
+  }
+  .chev-r {
+    margin-top: 27%;
+    margin-right: 17%;
+  }
+  /* section 4 (specs) */
+  #s4title {
+    margin-left: 20px;
+    padding-top: 25px;
+  }
+  h3 {
+    font-size: 30px;
+    font-style: medium;
+  }
+  #s4title p {
+    font-size: 16px;
+    font-style: light;
+  }
+
+  /* specs lines */
+  .spec {
+    margin-top: 32px;
+    font-size: 14px;
+    transition: 0.7s;
+  }
+  .left {
+    margin-left: 20px;
+  }
+  .right {
+    position: absolute;
+    margin-left: 48%;
+  }
+  /* hover animating each line */
+
+  .spec:hover {
+    font-size: 210%;
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+/* Reference responsive footer: https://www.youtube.com/watch?v=YOb67OKw62s */
+
+/* ------------ 1024px ------------ */
+/* GALLERY CAROUSEL */
+@media (max-width: 1024px) {
+  .gallery {
+    width: 200px;
+  }
+}
+
+.singleimage img {
+  width: 90% !important;
+}
