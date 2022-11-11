@@ -276,7 +276,6 @@ h1:hover {
 
 h2 {
   font-size: 55px;
-  font-style: medium;
   position: relative;
   transition: 0.2s;
 }
@@ -289,7 +288,6 @@ h2:hover {
 #s3title p {
   font-size: 16px;
   margin-top: 10px;
-  font-style: light;
 }
 /* --------- GALLERY div ---------- */
 #gallery {
@@ -324,11 +322,9 @@ h2:hover {
 }
 h3 {
   font-size: 55px;
-  font-style: medium;
 }
 #s4title p {
   font-size: 16px;
-  font-style: light;
 }
 /* each line of text has the class spec to apply spacing and to display the divs as flex to make them appear inline */
 .spec {
@@ -421,10 +417,6 @@ ul {
 
 .avatar-group sl-avatar:not(:first-of-type) {
   margin-left: -0.8rem;
-}
-
-.avatar-group sl-avatar::part(base) {
-  border: solid 2px var(--sl-color-neutral-0);
 }
 
 /* ----------- MEDIA QUEIRIES ----------- */
@@ -544,11 +536,9 @@ ul {
   }
   h3 {
     font-size: 30px;
-    font-style: medium;
   }
   #s4title p {
     font-size: 16px;
-    font-style: light;
   }
 
   /* specs lines */

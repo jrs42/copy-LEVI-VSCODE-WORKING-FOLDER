@@ -19,7 +19,6 @@
   </head>
 
   <body>
-
     <!-- loading screen SVG animation -->
     <div id="loading-screen">
       <svg
@@ -53,7 +52,7 @@
       </svg>
       <sl-icon-button name="volume-up" id="sound-btn"></sl-icon-button>
     </div>
- 
+
     <!-- NAVIGATION BAR -->
     <nav id="navbar">
       <div id="navlogo">
@@ -62,7 +61,7 @@
             id="toplogo"
             src="images/hk-logo.png"
             alt="Harman Kardon Logo black"
-            height="16px"
+            height="16"
         /></a>
       </div>
       <div id="navlinks">
@@ -76,20 +75,14 @@
     <!-- /////////////////// START SECTION 1 (VIDEO) //////////////////// -->
 
     <div id="section-1">
-      <video
-        class="video"
-        playsinline="true"
-        webkit-playsinline="true"
-        preload="auto"
-        muted="muted"
-      >
+      <video class="video" preload="auto" muted="muted">
         <source src="./animations/trim11.mp4" type="video/mp4" />
       </video>
       <!-- bouncing down arrow section 1 -->
       <div class="arrow"><sl-icon name="arrow-down"></sl-icon></div>
     </div>
     <!-- /////////////////// START SECTION 2 (MEET LEVI) //////////////////// -->
-    
+
     <div id="section-2">
       <div id="floaters">
         <div class="disc">
@@ -120,37 +113,33 @@
     </div>
     <!-- /////////////////// START SECTION 3 (IMAGE GALLERY) //////////////////// -->
 
-
     <div id="section-3">
-
       <div id="s3title">
-<h2>Gallery</h2>
-<p>harman/kardon levi v1</p>
+        <h2>Gallery</h2>
+        <p>harman/kardon levi v1</p>
       </div>
       <div id="gallery">
-            <div class="chev-l"><sl-icon name="chevron-left"></sl-icon></div>
-            <div class="chev-r"><sl-icon name="chevron-right"></sl-icon></div>
+        <div class="chev-l"><sl-icon name="chevron-left"></sl-icon></div>
+        <div class="chev-r"><sl-icon name="chevron-right"></sl-icon></div>
         <!-- images exist purely in javasctript, hence this div is empty -->
       </div>
     </div>
 
     <!-- SHOELACE COMPONENT: DIVIDER -->
-     <div class="divider"><sl-divider></sl-divider></div>
+    <div class="divider"><sl-divider></sl-divider></div>
     <!-- /////////////////// START SECTION 4 (SPECIFICATIONS) //////////////////// -->
-    
+
     <div id="section-4">
       <div id="s4title">
-        <h3>
-          Specifications
-        </h3>
+        <h3>Specifications</h3>
         <p>harman/kardon levi v1</p>
       </div>
       <!-- Main text area (specifications) -->
       <!-- spec 1 -->
       <div class="spec">
-      <div class="left">
+        <div class="left">
           <p>Type</p>
-      </div>
+        </div>
         <div class="right">
           <p>Direct Drive</p>
         </div>
@@ -158,138 +147,138 @@
       <!-- spec 2 -->
       <div class="spec">
         <div class="left">
-            <p>Speeds</p>
+          <p>Speeds</p>
         </div>
-          <div class="right">
-            <p>33.2, 46rpm</p>
-          </div>
+        <div class="right">
+          <p>33.2, 46rpm</p>
         </div>
-        <!-- spec 3 -->
-      <div class="spec">
-        <div class="left">
-            <p>Turntable Platter</p>
-        </div>
-          <div class="right">
-            <p>POM</p>
-          </div>
-        </div>
-               <!-- spec 4 -->
-      <div class="spec">
-        <div class="left">
-            <p>Power Consumption</p>
-        </div>
-          <div class="right">
-            <p>5.4W</p>
-          </div>
-        </div>
-               <!-- spec 5 -->
-      <div class="spec">
-        <div class="left">
-            <p>Audio Out</p>
-        </div>
-          <div class="right">
-            <p>RCA Phono/Line Level</p>
-          </div>
-        </div>
-               <!-- spec 6 -->
-      <div class="spec">
-        <div class="left">
-            <p>BlueTooth</p>
-        </div>
-          <div class="right">
-            <p>SBC/aptX/aptX HD</p>
-          </div>
-        </div>
-               <!-- spec 7 -->
-      <div class="spec">
-        <div class="left">
-            <p>Bearing</p>
-        </div>
-          <div class="right">
-            <p>Polished Steel</p>
-          </div>
-        </div>
-                       <!-- spec 8 -->
-      <div class="spec">
-        <div class="left">
-            <p>Weight</p>
-        </div>
-          <div class="right">
-            <p>7.5kg Approx.</p>
-          </div>
-        </div>
-                               <!-- spec 9 -->
-      <div class="spec">
-        <div class="left">
-            <p>Dimensions</p>
-        </div>
-          <div class="right">
-            <p>W/D/H: 420 x 350 x 125</p>
-          </div>
       </div>
-
+      <!-- spec 3 -->
+      <div class="spec">
+        <div class="left">
+          <p>Turntable Platter</p>
+        </div>
+        <div class="right">
+          <p>POM</p>
+        </div>
+      </div>
+      <!-- spec 4 -->
+      <div class="spec">
+        <div class="left">
+          <p>Power Consumption</p>
+        </div>
+        <div class="right">
+          <p>5.4W</p>
+        </div>
+      </div>
+      <!-- spec 5 -->
+      <div class="spec">
+        <div class="left">
+          <p>Audio Out</p>
+        </div>
+        <div class="right">
+          <p>RCA Phono/Line Level</p>
+        </div>
+      </div>
+      <!-- spec 6 -->
+      <div class="spec">
+        <div class="left">
+          <p>BlueTooth</p>
+        </div>
+        <div class="right">
+          <p>SBC/aptX/aptX HD</p>
+        </div>
+      </div>
+      <!-- spec 7 -->
+      <div class="spec">
+        <div class="left">
+          <p>Bearing</p>
+        </div>
+        <div class="right">
+          <p>Polished Steel</p>
+        </div>
+      </div>
+      <!-- spec 8 -->
+      <div class="spec">
+        <div class="left">
+          <p>Weight</p>
+        </div>
+        <div class="right">
+          <p>7.5kg Approx.</p>
+        </div>
+      </div>
+      <!-- spec 9 -->
+      <div class="spec">
+        <div class="left">
+          <p>Dimensions</p>
+        </div>
+        <div class="right">
+          <p>W/D/H: 420 x 350 x 125</p>
+        </div>
+      </div>
     </div>
     <!-- /////////////////// FOOTER //////////////////// -->
-<footer id="foot">
-  <!-- Harman Kardon Logo -->
+    <footer id="foot">
+      <!-- Harman Kardon Logo -->
 
+      <div class="container2">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">shipping</a></li>
+              <li><a href="#">returns</a></li>
+              <li><a href="#">order status</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <!-- SHOELACE AVATAR GROUP (3rd component) -->
+            <div class="avatar-group">
+              <a href="#">
+                <sl-avatar
+                  image="https://images.unsplash.com/photo-1490150028299-bf57d78394e0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&q=80&crop=right"
+                  label="Avatar 1 of 4"
+                ></sl-avatar>
 
-  <div class="container2">
-    <div class="row">
-      <div class="footer-col">
-        <h4>company</h4>
-        <ul>
-          <li><a href="#">about us</a></li>
-          <li><a href="#">our services</a></li>
-          <li><a href="#">privacy policy</a></li>
-          <li><a href="#">affiliate program</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>get help</h4>
-        <ul>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">shipping</a></li>
-          <li><a href="#">returns</a></li>
-          <li><a href="#">order status</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>follow us</h4>
-          <!-- SHOELACE AVATAR GROUP (3rd component) -->
-          <div class="avatar-group">
-            <a href="#">
-              <sl-avatar
-              image="https://images.unsplash.com/photo-1490150028299-bf57d78394e0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&q=80&crop=right"
-              label="Avatar 1 of 4"
-            ></sl-avatar>
+                <sl-avatar
+                  image="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&crop=left&q=80"
+                  label="Avatar 2 of 4"
+                ></sl-avatar>
 
-            <sl-avatar
-              image="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&crop=left&q=80"
-              label="Avatar 2 of 4"
-            ></sl-avatar>
+                <sl-avatar
+                  image="https://images.unsplash.com/photo-1456439663599-95b042d50252?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&crop=left&q=80"
+                  label="Avatar 3 of 4"
+                ></sl-avatar>
 
-            <sl-avatar
-              image="https://images.unsplash.com/photo-1456439663599-95b042d50252?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&crop=left&q=80"
-              label="Avatar 3 of 4"
-            ></sl-avatar>
-
-            <sl-avatar
-              image="https://images.unsplash.com/flagged/photo-1554078875-e37cb8b0e27d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&crop=top&q=80"
-              label="Avatar 4 of 4"
-            ></sl-avatar>
-          </a>
-          <!-- Reference: avatar group - https://shoelace.style/components/avatar -->
+                <sl-avatar
+                  image="https://images.unsplash.com/flagged/photo-1554078875-e37cb8b0e27d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&crop=top&q=80"
+                  label="Avatar 4 of 4"
+                ></sl-avatar>
+              </a>
+              <!-- Reference: avatar group - https://shoelace.style/components/avatar -->
+            </div>
+          </div>
         </div>
-
-        </div>
       </div>
-    </div>
-  </div>
-<!-- Reference responsive footer: https://www.youtube.com/watch?v=YOb67OKw62s. https://drive.google.com/file/d/12DNl4xsajW8Crzf5YqMwDksH_1y0jwhk/view -->
+    </footer>
+    <!-- Reference responsive footer: https://www.youtube.com/watch?v=YOb67OKw62s., https://drive.google.com/file/d/12DNl4xsajW8Crzf5YqMwDksH_1y0jwhk/view -->
 
     <!-- links scripts to html -->
-    <script src="https://kit.fontawesome.com/84e247914f.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/84e247914f.js"
+      crossorigin="anonymous"
+    ></script>
     <script
       type="module"
       src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/shoelace.js"
