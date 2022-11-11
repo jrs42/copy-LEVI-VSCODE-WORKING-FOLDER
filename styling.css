@@ -20,7 +20,7 @@ body {
 /* sound player */
 #sound-btn {
   font-size: 40px;
-  margin-top: 56%;
+  margin-top: 70vh;
 }
 /* loading screen sizing and colour */
 
@@ -30,7 +30,7 @@ body {
   height: 100vh;
   top: 0;
   z-index: 100;
-  background: #ffad3a;
+  background: #ff9524;
   animation-delay: 5s;
   animation-duration: 0.8s;
   animation-name: loadin;
@@ -97,7 +97,7 @@ body {
 /* --------- navigation general styling --------- */
 
 #navbar {
-  background-color: #ffad3a;
+  background-color: #ff9524;
   position: fixed;
   width: 100vw;
   display: block;
@@ -265,6 +265,7 @@ h1:hover {
 
 #section-3 {
   background-color: #ffffff;
+  height: 160vh;
 }
 /* Section Title area */
 #s3title {
@@ -312,7 +313,7 @@ h2:hover {
 /* ////////////////////// SECTION 4 START (Specifications) ////////////////////// */
 
 #section-4 {
-  height: 140vh;
+  height: 160vh;
   background-color: #ffffff;
 }
 /* Section Title area */
@@ -348,7 +349,7 @@ h3 {
 
 /* ////////////////////// FOOTER ////////////////////// */
 #foot {
-  background-color: #ffad3a;
+  background-color: #ff9524;
   color: white;
   padding: 50px;
   line-height: 1.5;
